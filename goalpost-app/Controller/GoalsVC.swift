@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import CoreData
+let appdelegate = UIApplication.shared.delegate as? AppDelegate
 class GoalsVC: UIViewController {
 
     @IBOutlet weak var GoalTableView: UITableView!
@@ -18,6 +19,8 @@ class GoalsVC: UIViewController {
     }
 
     @IBAction func AddGoalButtonTapped(_ sender: Any) {
+        guard let CreatGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVCSID") else {return}
+        presentViewController(CreatGoalVC)
     }
     
 }

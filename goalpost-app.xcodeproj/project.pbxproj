@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09338D042295569A00E712D6 /* FinishCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09338D032295569A00E712D6 /* FinishCreateVC.swift */; };
 		09BEDAD2229404B60070216E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAD1229404B60070216E /* AppDelegate.swift */; };
 		09BEDAD4229404B60070216E /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAD3229404B60070216E /* GoalsVC.swift */; };
 		09BEDAD7229404B60070216E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BEDAD5229404B60070216E /* Main.storyboard */; };
@@ -17,9 +18,12 @@
 		09BEDAEE22941E900070216E /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAED22941E900070216E /* GoalType.swift */; };
 		09BEDAF0229422D60070216E /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAEF229422D60070216E /* CreateGoalVC.swift */; };
 		09BEDAF2229424440070216E /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAF1229424440070216E /* ViewControllerExt.swift */; };
+		09BEDAF422942D8F0070216E /* BindKeyBoardToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAF322942D8F0070216E /* BindKeyBoardToView.swift */; };
+		09BEDAF622942FDD0070216E /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BEDAF522942FDD0070216E /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09338D032295569A00E712D6 /* FinishCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCreateVC.swift; sourceTree = "<group>"; };
 		09BEDACE229404B60070216E /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BEDAD1229404B60070216E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09BEDAD3229404B60070216E /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		09BEDAED22941E900070216E /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		09BEDAEF229422D60070216E /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		09BEDAF1229424440070216E /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		09BEDAF322942D8F0070216E /* BindKeyBoardToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindKeyBoardToView.swift; sourceTree = "<group>"; };
+		09BEDAF522942FDD0070216E /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				09BEDAD3229404B60070216E /* GoalsVC.swift */,
+				09BEDAEF229422D60070216E /* CreateGoalVC.swift */,
+				09338D032295569A00E712D6 /* FinishCreateVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				09BEDAEB2294172C0070216E /* GoalCell.swift */,
-				09BEDAEF229422D60070216E /* CreateGoalVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				09BEDAF1229424440070216E /* ViewControllerExt.swift */,
+				09BEDAF322942D8F0070216E /* BindKeyBoardToView.swift */,
+				09BEDAF522942FDD0070216E /* UIButtonExt.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -183,12 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BEDAEC2294172C0070216E /* GoalCell.swift in Sources */,
+				09338D042295569A00E712D6 /* FinishCreateVC.swift in Sources */,
 				09BEDAF0229422D60070216E /* CreateGoalVC.swift in Sources */,
 				09BEDAEE22941E900070216E /* GoalType.swift in Sources */,
 				09BEDAD4229404B60070216E /* GoalsVC.swift in Sources */,
 				09BEDAF2229424440070216E /* ViewControllerExt.swift in Sources */,
 				09BEDAD2229404B60070216E /* AppDelegate.swift in Sources */,
 				09BEDADA229404B60070216E /* goalpost_app.xcdatamodeld in Sources */,
+				09BEDAF622942FDD0070216E /* UIButtonExt.swift in Sources */,
+				09BEDAF422942D8F0070216E /* BindKeyBoardToView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rosenfielddwc.goalpost-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -361,7 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rosenfielddwc.goalpost-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
